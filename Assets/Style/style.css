@@ -47,7 +47,7 @@
     border: 2px solid #FF0000;
   }
 
-  .location {
+  .display {
     box-sizing: border-box;
     position: relative;
     padding: 5em;
@@ -162,3 +162,105 @@
     display: flex;
     justify-content: space-evenly;
   }
+
+  .city {
+    box-sizing: border-box;
+    position: absolute;
+    left: 1.71%;
+    right: 1.71%;
+    top: 29.6%;
+    bottom: 64.93%;
+    background: #D9D9D9;
+    border: 1px dashed #FF0000;
+  }
+
+  #atlanta {
+    box-sizing: border-box;
+    position: absolute;
+    left: 1.71%;
+    right: 1.71%;
+    top: 29.6%;
+    bottom: 64.93%;
+    background: #D9D9D9;
+    border: 1px dashed #FF0000;
+
+  }
+
+  #denver {
+    box-sizing: border-box;
+    position: absolute;
+    left: 1.71%;
+    right: 1.71%;
+    top: 36.32%;
+    bottom: 58.21%;
+    background: #D9D9D9;
+    border: 1px dashed #FF0000;
+
+  }
+
+  #seattle{
+    box-sizing: border-box;
+    position: absolute;
+    left: 1.71%;
+    right: 1.71%;
+    top: 43.78%;
+    bottom: 50.75%;
+    background: #D9D9D9;
+    border: 1px dashed #FF0000;
+  }
+
+  #san-fran{
+    box-sizing: border-box;
+    position: absolute;
+    left: 1.71%;
+    right: 1.71%;
+    top: 51.87%;
+    bottom: 42.66%;
+    background: #D9D9D9;
+    border: 1px dashed #FF0000;
+  }
+
+  #orlando{
+    box-sizing: border-box;
+    position: absolute;
+    left: 1.71%;
+    right: 1.71%;
+    top: 59.95%;
+    bottom: 34.58%;
+    background: #D9D9D9;
+    border: 1px dashed #FF0000;
+  }
+
+  #nyc {
+    box-sizing: border-box;
+    position: absolute;
+    left: 1.71%;
+    right: 1.71%;
+    top: 68.28%;
+    bottom: 26.24%;
+    background: #D9D9D9;
+    border: 1px dashed #FF0000;
+  }
+
+  #chicago {
+    box-sizing: border-box;
+    position: absolute;
+    left: 1.71%;
+    right: 1.71%;
+    top: 76.37%;
+    bottom: 18.16%;
+    background: #D9D9D9;
+    border: 1px dashed #FF0000;
+  }
+
+  #slc {
+    box-sizing: border-box;
+    position: absolute;
+    left: 1.71%;
+    right: 1.71%;
+    top: 83.83%;
+    bottom: 10.7%;
+    background: #D9D9D9;
+    border: 1px dashed #FF0000;
+  }
+
