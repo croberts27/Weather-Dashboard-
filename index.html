@@ -10,43 +10,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Vollkorn&display=swap" rel="stylesheet">
     <title>Weather Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
-<body>
-    <header>
-        <h1>Weather Dashboard</h1>
-    </header>
-    
-    <main>
-        <div class="dashboard">
-            <section class="display">
-                <h1>Weather Display</h1>
-            </section>
-            <section class="five-day-forcast">
-                <h1>5 Day Forcast</h1>
-                <div class="mon">Day 1</div>
-                <div class="tue">Day 2</div>
-                <div class="wed">Day 3</div>
-                <div class="thu">Day 4</div>
-                <div class="fri">Day 5</div>
-            </section>
+<body> 
+    <nav class="navbar customnav">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color:rgb(255, 255, 255);">Weather Dashboard</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
-        <aside>
-            <h1>Aside content</h1>
-            <br>
-            <button id="atlanta" class = "city"></button>
-            <button id="denver" class = "city"></button>
-            <button id="seattle" class = "city"></button>
-            <button id="san-fran" class = "city"></button>
-            <button id="orlando" class = "city"></button>
-            <button id="nyc" class = "city"></button>
-            <button id="chicago" class = "city"></button>
-            <button id="slc" class = "city"></button>
-        </aside>
+      </nav>
+    <main>
+        <div class="container text-center customcontainer">
+            <h2>Five Day Forcast</h2>
+            <div class="row align-items-center customfivedayforcast">
+              <div class="col">
+                Monday
+              </div>
+              <div class="col">
+                Tuesday
+              </div>
+              <div class="col">
+                Wednesday
+              </div>
+              <div class="col">
+                Thursday
+              </div>
+              <div class="col">
+                Friday
+              </div>
+            </div>
+          </div>
     </main>
-
-    <footer>
-        <h1>This is the footer</h1>
-    </footer>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <script src="./Assets/js/script.js"></script>   
 </body>
+
 </html>
