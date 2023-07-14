@@ -1,31 +1,34 @@
-function runAPI() {
-    var apiKey = "53736836ebc94d892bdc0b54c089eeab";
-    var city = document.getElementById("searchBox").value;
-    var queryURL = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=5&appid=" + apiKey;
+function searchWeather(event) {
+  event.preventDefault();
 
-    fetch(queryURL)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            console.log(data); // Log the weather data to the console
+  var apiKey = "53736836ebc94d892bdc0b54c089eeab";
+  var city = document.getElementById("searchBox").value;
+  var queryURL =
+    "https://api.openweathermap.org/geo/1.0/direct?q=" +
+    city +
+    "&limit=5&appid=" +
+    apiKey;
 
-            var currentWeatherElement = document.getElementById("currentWeather");
-            currentWeatherElement.innerHTML = "Temperature: " + data[0].temperature + "°C";
+  fetch(queryURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data); // Log the weather data to the console
 
-            var day1Element = document.getElementById("day1");
-            day1Element.textContent = "Monday";
+      var currentWeatherElement = document.getElementById("currentWeather");
+      currentWeatherElement.innerHTML =
+        "Temperature: " + data[0].temperature + "°C";
 
-            var day2Element = document.getElementById("day2");
-            day2Element.textContent = "Tuesday";
+      var forecastContainer = document.getElementById("forecastContainer");
+      forecastContainer.innerHTML = "";
 
-            var day3Element = document.getElementById("day3");
-            day3Element.textContent = "Wednesday";
+      for (var i = 1; i <= 5; i++) {
+        var forecastElement = document.createElement("div");
+        forecastElement.classList.add("col");
+        forecastElement.textContent = "Day " + i;
 
-            var day4Element = document.getElementById("day4");
-            day4Element.textContent = "Thursday";
-
-            var day5Element = document.getElementById("day5");
-            day5Element.textContent = "Friday";
-        });
+        forecastContainer.appendChild(forecastElement);
+      }
+    });
 }
